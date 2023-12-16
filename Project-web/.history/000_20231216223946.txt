@@ -1,0 +1,13 @@
+1. Tạo Thư mục Laravel:
+- composer.phar create-project laravel/laravel <Tên thư mục>
+2. Cài Boostrap laravel:
+- composer.php require laravel/ui
+- php artisan ui bootstrap --auth
+- npm install
+- npm run dev
+* Nếu gặp lỗi thì: 
+- npm install resolve-url-loader@^5.0.0 --save-dev --legacy-peer-deps
+3. Cài đặt phân quyền
+-  composer require spatie/laravel-permission
+Thêm dòng lệnh này ở config/app.php ở Class 'providers'
+- Spatie\Permission\PermissionServiceProvider::class,
